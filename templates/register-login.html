@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>registrarse</title>
+    <!--<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>-->
+</head>
+<body style="background-color:rgb(18, 124, 223);font-size: 30px;">
+    <!--<h3 style="text-align: center;">Registrate</h3>-->
+    <p style="text-align: center;">Registra un nuevo Usuario</p>
+    <br>
+    <form style="text-align: center;" action="{{url_for('registrar')}}" method="POST">
+        <img style="width: 140px;height: 140px;" ; src="{{ url_for('static', filename='img/a.jpeg') }}" alt="">
+        <br>
+        <label>Nombre</label>
+        <br>
+        <input style="width:500px; height:20px;" type="text" name="nombre" placeholder="ingrese nombre">
+        <br>
+        <label>Usuario</label>
+        <br>
+        <input style="width:500px; height:20px;" type="text" name="usuario" placeholder="ingrese nombre usuario">
+        <br>
+        <label>Email</label>
+        <br>
+        <input style="width:500px; height:20px;" type="text" name="email" placeholder="ingrese email">
+        <br>
+        <br>
+        <label>Contraseña</label>
+        <br>
+        <input style="width:500px; height:20px;" type="password" name="password" placeholder="ingrese contraseña">
+        <br>
+        <br>
+        <br>
+        <br>
+        <input style="width:200px;height: 50px;" type="submit" value="registrar" name="">
+    </form>
+    <br>
+    <br>
+    
+</body>
+
+</html>
